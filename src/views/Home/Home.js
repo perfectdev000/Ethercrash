@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import useInterval from 'react-useinterval'
 import cn from 'classnames'
-import { messages as initialMesages } from '../ChatMessages'
+import { messages as initialMesages } from '../Home/ChatMessages'
 import { Link } from 'react-router-dom'
-import Chat from '../Chat'
+import Chat from '../Home/Chat'
 import './Home.css'
 
 let axisStep = (step, add = 0) => {

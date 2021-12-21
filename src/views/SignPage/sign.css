@@ -1,0 +1,82 @@
+.root{
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+.div-form{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  color: lightgray;
+}
+form{
+  width: 50%;
+  min-width: 420px;
+  max-width: 500px;
+}
+.form-title{
+  font-size: 28px;
+  font-weight: 500;
+  color: lightgray;
+  padding: 20px 0px;
+  width: 100%;
+  text-align: center;
+}
+.text-label{
+  width: 100%;
+  padding: 20px 10px 10px 10px;
+  font-size: 20px;
+  color: lightgray;
+}
+.text-input{
+  width: 96%;
+  height: 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 10px 2%;
+}
+p{
+  padding: 5px 2%;
+  color: gray;
+  width: 96%;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.text-check{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.checkbox{
+  width: 20px;
+  height: 20px;
+}
+.bottom-img{
+  width:'100vw';
+  position:absolute;
+  bottom:0;
+  z-index: 0;
+}
+.submit{
+  margin-top: 20px;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: green;
+  
+}
+.submit:hover{
+  cursor:pointer;
+  background-color: rgb(0,158,0)
+}
+.submit:active{
+  cursor:pointer;
+  background-color: rgb(0,88,0)
+}
