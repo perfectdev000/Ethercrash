@@ -13,7 +13,7 @@
   z-index: 2;
   color: lightgray;
 }
-form{
+.form{
   width: 50%;
   min-width: 420px;
   max-width: 500px;
@@ -28,9 +28,9 @@ form{
 }
 .text-label{
   width: 100%;
-  padding: 20px 10px 10px 10px;
-  font-size: 20px;
-  color: lightgray;
+  padding: 20px 10px 10px 5px;
+  font-size: 16px;
+  color: gray;
 }
 .text-input{
   width: 96%;
@@ -56,14 +56,8 @@ p{
   width: 20px;
   height: 20px;
 }
-.bottom-img{
-  width:'100vw';
-  position:absolute;
-  bottom:0;
-  z-index: 0;
-}
 .submit{
-  margin-top: 20px;
+  margin-top: 30px;
   width: 100%;
   font-size: 18px;
   padding: 10px;
@@ -79,4 +73,20 @@ p{
 .submit:active{
   cursor:pointer;
   background-color: rgb(0,88,0)
+}
+.login-signup{
+  margin: 30px 0 0 0;  
+  text-align: center;
+  border-bottom: 0;
+  font-style: normal;
+  color: gray;
+  text-decoration: none;
+}
+
+
+.bottom-img{
+  width:'100vw';
+  position:absolute;
+  bottom:0;
+  z-index: 0;
 }
