@@ -1,0 +1,766 @@
+input, button {
+    border: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.Header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background: #292d35;
+  color: white;
+  padding: 0 14px;
+}
+
+.Header_logo {
+  font-size: 24px;
+}
+
+.Header_auth {
+
+}
+
+.Screen {
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.AuthLinks {
+  display: flex;
+  margin-left: -14px;
+}
+
+.AuthLinks_link {
+  margin-left: 14px;
+  color: coral;
+}
+
+.GameWrapper {
+  display: flex;
+  flex-direction: column;
+  background: #181A1E;
+  flex-shrink: 0;
+}
+
+.Game {
+  align-self: center;
+  height: 232px;
+  min-height: 232px;
+  width: 340px;
+  min-width: 340px;
+  position: relative;
+  background: #181A1E;
+}
+
+.Game_text {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+}
+
+.Game_graphic {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  right: 0;
+}
+
+.Game_value {
+  position: absolute;
+  top: 56px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+}
+
+.Game_history { 
+  position: absolute;
+  top: 220px;
+  left: 0;
+  right: 0;
+}
+
+.GameHistory { 
+  display: flex;
+  margin-left: -8px;
+  justify-content: center;
+}
+
+.GameHistory_item { 
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.GameHistory_item.--win { 
+  color: green;
+}
+
+.GameHistory_item.--loose { 
+  color: red;
+}
+
+.Auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #181A1E;
+  flex-grow: 1;
+}
+
+.Auth_button {
+}
+
+.Auth_link {
+  align-self: flex-end;
+  color: coral;
+}
+
+.TabPane {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  border-top: 1px dashed coral;
+  background: #292d35;
+}
+
+.TabLine {
+  display: flex;
+  justify-content: stretch;
+  padding: 10px;
+  background: #292d35;
+  color: white;
+  writing-mode:tb-rl;
+  transform: rotate(180deg);
+  cursor: pointer;
+  min-width: 16px;
+  justify-content: flex-end;
+}
+
+.TabLine > * {
+  margin-bottom: 15px;
+}
+
+.TabLine_item {
+  border-bottom: 1px solid rgba(1,1,1,0);
+}
+
+.TabLine_item.--active {
+  color: coral;
+}
+
+.TabContent {
+  display: none;
+  flex-direction: column;
+  background: #181A1E;
+  overflow-y:scroll;
+  padding: 8px 8px 8px 0;
+  flex-grow: 1;
+}
+
+.TabContent.--active {
+  display: flex;
+}
+
+.Table {
+  display: grid;
+
+}
+
+.Table.--players {
+  overflow-y: scroll;
+  grid-template-columns: 4fr 1fr 1fr 2fr;
+  grid-auto-rows: 24px;
+  flex-grow: 1;
+}
+
+.Table_cell {
+  color: white;
+  padding: 4px;
+}
+
+.Table_cell.--odd {
+  background: #292d3542;
+}
+
+.Table_cell.--header {
+  color: coral;
+}
+
+.Bet {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin-top: -4px;
+  padding: 10px;
+  background: #181A1E;
+  color: white;
+  min-height: 127px;
+  box-sizing: border-box;
+}
+
+.Bet_line {
+  margin-top: 4px;
+}
+
+.BetInput {
+  display: flex;
+  align-items: baseline;
+  margin-left: -4px;
+}
+
+.BetInput > * {
+  margin-left: 4px;
+}
+
+.BetInput_label {
+  color: gray;
+  font-size: 18px;
+}
+
+.BetInput_input {
+  width: 4px;
+  flex-grow: 1;
+  background: #292d35;
+  color: rgb(102, 91, 91);
+  font-size: 22px;
+  padding: 0;
+}
+
+.BetInput_button {
+  background: wheat;
+  font-size: 22px;
+}
+
+.BetInput_switch {
+  background: wheat;
+  font-size: 18px;
+  height: 28px;
+  line-height: 28px;
+}
+
+.BetInput_switch.--active {
+  background: coral;
+}
+
+.BetInput_field {
+  display: flex;
+  flex-grow: 1;
+  margin-left: -2px;
+  align-items: baseline;
+}
+
+.BetInput_field > * {
+  margin-left: 8px;
+}
+
+.BetInput_buttons {
+  display: flex;
+  justify-content: stretch;
+}
+
+.BetRun {
+  display: flex;
+  margin-left: -16px;
+}
+
+.BetRun > * {
+  margin-left: 16px;
+}
+
+.BetRun_statistics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+
+.BetRun_buttonSpace {
+  flex-grow: 1;
+}
+
+.BetRun_button {
+  background:coral;
+  width: 100%;
+  height: 100%;
+  color: white;
+  transform: translateY(4px);
+}
+
+.BetRunStatistics {
+  font-size: 0.8em;
+}
+
+.BetRunStatistics_name {
+  color: gray;
+}
+
+.BetRunStatistics_value {
+  font-weight: bold;
+  text-align: left;
+}
+
+.Statistics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #292d35;
+  color: #EEEEEF;
+}
+
+.Statistics_item {
+  padding: 40px;
+}
+
+.StatisticsItem {
+
+}
+
+.StatisticsItem.--home {
+
+}
+
+.StatisticsItem.--bankroll {
+
+}
+
+.StatisticsItem.--maxProfit {
+
+}
+
+.StatisticsItem.--maxBet {
+
+}
+
+.StatisticsItem_name {
+
+}
+
+.StatisticsItem_value {
+
+}
+
+.Button {
+  background: coral;
+  border-bottom: 4px solid wheat;
+  padding: 10px 40px;
+  border-radius: 16px;
+  font-size: 24px;
+}
+
+.Article {
+  display: flex;
+  flex-direction: column;
+  margin-top: -24px;
+  padding: 40px;
+}
+
+.Article {
+  margin-top: 24px;
+}
+
+.Article_header {
+  font-size: 34px;
+}
+
+.Article_text {
+
+}
+
+.Article.--negative {
+  background: #181A1E;
+}
+.Article_header.--negative {
+  color: white;
+
+}
+.Article_text.--negative {
+  color: white;
+}
+
+.Leaderboard {
+  font-size: 34px;
+  background: #29345c;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -24px;
+}
+
+.Leaderboard {
+  margin-top: 24px;
+}
+
+.Leaderboard_header {
+  font-size: 24px;
+}
+
+.Leaderboard_table {
+  display: grid;
+  grid-template-columns: 1fr 4fr 3fr;
+}
+
+.Leaderboard_cell {
+  text-align: left;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.Copyright {
+  background: #181A1E;
+  color: white;
+  padding: 12px;
+}
+
+.DesktopContent {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #181A1E;
+  flex-grow: 1;
+  padding: 14px;
+  overflow-y: hidden;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: calc(100vh - 35px);
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.Chat {
+  flex-shrink: 1;
+  color: white;
+  overflow-y: scroll;
+}
+
+.Chat_header {
+  font-size: 16px;
+}
+
+.Chat_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.ChatRow {
+  display: flex;
+  flex-direction: row;
+  margin-left: -4px; 
+}
+
+.ChatRow > div {
+  margin-left: 4px; 
+}
+
+.ChatRow_time {
+  color: teal;
+}
+
+.ChatRow_name {
+  font-weight: bold;
+}
+
+.ChatRow_text {
+  opacity: 0.8;
+  text-align: left;
+}
+
+.ChatNewMessage {
+  display: flex;
+  padding: 8px;
+}
+
+.ChatNewMessage_input {
+  background: #292d35;
+  font-size: 18px;
+  color: white;
+  width: 0;
+  flex-grow: 1;
+}
+
+.ChatNewMessage_button {
+  background: coral;
+  color: white;
+  font-size: 18px;
+}
+
+.ArticleGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.PlayerStatistics {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  background: #292d35;
+}
+
+.PlayerStatistics_item {
+  color: coral;
+}
+
+.ChatHeader {
+  padding: 10px;
+  background: #292d35;
+  color: coral;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .TabPane {
+    display: none;
+  }
+
+  .ChatRow {
+    display: flex;
+    flex-direction: row;
+    margin-left: -12px; 
+  }
+  
+  .ChatRow > div {
+    margin-left: 12px; 
+  }
+
+  .GameWrapper {
+    flex-direction: row;
+    height: 310px;
+    min-height: 310px;
+  }
+
+  .DesktopContent {
+    display: flex; 
+  }
+
+  .Game {
+    flex-grow: 3;
+  }
+
+  .Bet {
+    flex-grow: 1;
+    font-size: 1.5em;
+    align-self: center;
+  }
+
+  .BetInput {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .BetRun {
+    flex-direction: column-reverse;
+    flex-grow: 1;
+  }
+
+  .BetInput_input {
+    font-size: 18px;
+    padding: 0 8px;
+  }
+
+  .ArticleGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Statistics {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+    .Game {
+        height: 250px;
+        min-height: 250px;
+        margin-top: -40px;
+    }
+
+    .Game_graphic > svg {
+        width: 400px;
+        height: 240px;
+    }
+
+  .GameHistory { 
+    display: flex;
+    margin-left: -12px;
+    justify-content: center;
+  }
+  .Game_history {
+    top: 285px;
+  }
+  .GameHistory_item {
+    margin-left: 12px;
+    font-size: 16px
+  }
+  ::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    background: #181A1E;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(138, 69, 44);    
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: #181A1E;
+  }
+
+  .BetRun_buttonSpace {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5%;
+  }
+
+  .BetRun_button {
+    width: 50%;
+    max-width: 50%;
+    height: 50%;
+    background:coral;
+    color: white;
+    font-size: 1em;
+    border-radius: 8px;
+    border-bottom: 4px solid wheat;
+    margin-bottom: 14px;
+  }
+
+  .Bet {
+    margin-top: -12px;
+  }
+
+  .Bet, .BetInput > * {
+    margin-top: 12px;
+  }
+
+  .BetInput_field {
+    margin-left: -12px;
+  }
+
+  .BetInput_field > * {
+    margin-left: 12px;
+  }
+
+  .BetInput_button, .BetInput_switch {
+    flex-grow: 1;
+    font-size: 1.2em;
+  }
+
+  .ChatNewMessage_input, .ChatNewMessage_button {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .GameWrapper {
+    flex-direction: row;
+    height: 450px;
+    min-height: 450px;
+  }
+
+  .Game {
+    height: 450px;
+    min-height: 450px;
+    margin-top: 0px;
+  }
+
+  .Game_graphic > svg {
+    width: 600px;
+    height: 360px;
+  }
+
+  .GameHistory { 
+    margin-left: -18px;
+  }
+  .Game_history {
+    top: 405px;
+  }
+  .GameHistory_item {
+    margin-left: 18px;
+    font-size: 24px
+  }
+  .BetRun_button {
+    font-size: 1em;
+    width: 66%;
+    max-width: 66%;
+    height: 33%;
+    padding: 24px 0;
+    margin-bottom: 18px;
+  }
+}
+
+/*@media only screen and (max-height: 720px) {
+    .TabPane {
+        display: flex;
+        height: 180px;
+    }
+}*/
+
+/*
+    .Game {
+        height: 172px;
+        min-height: 172px;
+        overflow: hidden;
+    }
+
+    .Game_graphic > svg {
+        height: 120px;
+    }
+
+    .Game_history {
+        top: 160px;
+    }
+}*/
+        /*
+.Game {
+    height: 250px;
+    min-height: 250px;
+    margin-top: -40px;
+}
+
+.Game_graphic > svg {
+    width: 400px;
+    height: 240px;
+}
+
+.Game_graphic {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    right: 0;
+}
+
+.Game_value {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 48px;
+}
+
+.Game_history {
+    position: absolute;
+    top: 220px;
+    left: 0;
+    right: 0;
+}
+    */

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="274px" viewBox="0 0 1440 274" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 1335.8398 0 1335.8398 97.0984879 0 97.0984879"></polygon>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#404040" offset="0%"></stop>
+            <stop stop-color="#404040" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-4" points="0 207.218635 0 19.5104765 39.0209529 39.0209529 39.0209529 207.218635"></polygon>
+        <polygon id="path-5" points="78.0419059 207.218635 78.0419059 19.5104765 39.0209529 39.0209529 39.0209529 207.218635"></polygon>
+        <polygon id="path-6" points="0 19.5104765 39.0209529 0 78.0419059 19.5104765 39.0209529 39.0209529"></polygon>
+        <polygon id="path-7" points="0 272.539436 0 19.5104765 39.1078728 39.0956251 39.1078728 272.539436"></polygon>
+        <polygon id="path-8" points="78.1288258 273.088513 78.1288258 19.5104765 39.0209529 39.0080596 39.0209529 273.103613"></polygon>
+        <polygon id="path-9" points="0 19.5104765 39.0209529 0 78.0419059 19.5104765 39.0209529 39.0209529"></polygon>
+        <polygon id="path-10" points="0 152.490396 0 19.5104765 39.0209529 39.0209529 39.0209529 152.490396"></polygon>
+        <polygon id="path-11" points="78.0419059 152.166354 78.0419059 19.5104765 39.0209529 39.0209529 39.0209529 152.490396"></polygon>
+        <polygon id="path-12" points="0 19.5104765 39.0209529 0 78.0419059 19.5104765 39.0209529 39.0209529"></polygon>
+        <polygon id="path-13" points="0 216.04577 0 19.5104765 39.0209529 39.0209529 39.0209529 216.04577"></polygon>
+        <polygon id="path-14" points="78.0419059 216.04577 78.0419059 19.5104765 39.0209529 39.0209529 39.0209529 216.04577"></polygon>
+        <polygon id="path-15" points="0 19.5104765 39.0209529 0 78.0419059 19.5104765 39.0209529 39.0209529"></polygon>
+        <polygon id="path-16" points="0 260.181447 0 19.5104765 39.0209529 39.0209529 39.0209529 260.181447"></polygon>
+        <polygon id="path-17" points="78.0419059 260.181447 78.0419059 19.5104765 39.0209529 39.0209529 39.0209529 260.181447"></polygon>
+        <polygon id="path-18" points="0 19.5104765 39.0209529 0 78.0419059 19.5104765 39.0209529 39.0209529"></polygon>
+        <polygon id="path-19" points="0 250.765836 0 19.5104765 39.0209529 39.0209529 39.0209529 251.633923"></polygon>
+        <polygon id="path-20" points="78.0419059 250.765836 78.0419059 19.5104765 39.0209529 39.0209529 39.0209529 250.765836"></polygon>
+        <polygon id="path-21" points="0 19.5104765 39.0209529 0 78.0419059 19.5104765 39.0209529 39.0209529"></polygon>
+        <polygon id="path-22" points="14.8938915 272.539436 0 265.311755 0 19.5104765 39.0209529 39.0209529 39.0209529 272.646783"></polygon>
+        <polygon id="path-23" points="63.3056576 272.539436 78.0419059 265.311755 78.0419059 19.5104765 39.0209529 39.0209529 39.0209529 272.539436"></polygon>
+        <polygon id="path-24" points="0 19.5104765 39.0209529 0 78.0419059 19.5104765 39.0209529 39.0209529"></polygon>
+        <polygon id="path-25" points="0 216.04577 0 19.5104765 39.0209529 39.0209529 39.0209529 216.04577"></polygon>
+        <polygon id="path-26" points="78.0419059 216.04577 78.0419059 19.5104765 39.0209529 39.0209529 39.0209529 216.04577"></polygon>
+        <polygon id="path-27" points="0 19.5104765 39.0209529 0 78.0419059 19.5104765 39.0209529 39.0209529"></polygon>
+        <polygon id="path-28" points="0 216.04577 0 19.5104765 39.0209529 39.0209529 39.0209529 216.04577"></polygon>
+        <polygon id="path-29" points="78.0419059 216.04577 78.0419059 19.5104765 39.0209529 39.0209529 39.0209529 216.04577"></polygon>
+        <polygon id="path-30" points="0 19.5104765 39.0209529 0 78.0419059 19.5104765 39.0209529 39.0209529"></polygon>
+        <polygon id="path-31" points="0 207.230171 0 19.5104765 39.0209529 39.0209529 39.0209529 207.05237"></polygon>
+        <polygon id="path-32" points="78.0419059 207.218635 78.0419059 19.5104765 39.0209529 39.0209529 39.0209529 207.218635"></polygon>
+        <polygon id="path-33" points="0 19.5104765 39.0209529 0 78.0419059 19.5104765 39.0209529 39.0209529"></polygon>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-34">
+            <stop stop-color="#2F3B68" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#252C51" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard-6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.35">
+        <g id="Group-2">
+            <g id="VFX-BG" opacity="0.502008929" style="mix-blend-mode: multiply;" transform="translate(24.715979, 48.715570)">
+                <g id="background/parallax">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Duplicate-control"></g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g id="BG-DECORD" opacity="0.22582654" transform="translate(100.629342, 0.000000)" fill="#404040">
+                            <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape"></path>
+                        </g>
+                        <g id="BG-DECORD-Copy-2" opacity="0.0995810688" fill="url(#linearGradient-3)">
+                            <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape"></path>
+                        </g>
+                        <g id="BG-DECORD-Copy" opacity="0.22582654" transform="translate(70.028606, 23.539027)" fill="url(#linearGradient-3)">
+                            <path d="M0,4.71637551 L9.41561095,0 L18.8312219,4.71637551 L18.8312219,64.1352796 L9.41561095,68.8516551 L0,64.1352796 L0,4.71637551 Z" id="Combined-Shape"></path>
+                        </g>
+                    </g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(133.583980, 0.000000)">
+                            <g id="BG-DECORD" opacity="0.22582654" transform="translate(100.629342, 0.000000)">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy-2" opacity="0.0995810688">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy" opacity="0.22582654" transform="translate(70.028606, 23.539027)">
+                                <path d="M0,4.71637551 L9.41561095,0 L18.8312219,4.71637551 L18.8312219,64.1352796 L9.41561095,68.8516551 L0,64.1352796 L0,4.71637551 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(267.167961, 0.000000)">
+                            <g id="BG-DECORD" opacity="0.22582654" transform="translate(100.629342, 0.000000)">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy-2" opacity="0.0995810688">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy" opacity="0.22582654" transform="translate(70.028606, 23.539027)">
+                                <path d="M0,4.71637551 L9.41561095,0 L18.8312219,4.71637551 L18.8312219,64.1352796 L9.41561095,68.8516551 L0,64.1352796 L0,4.71637551 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(400.751941, 0.000000)">
+                            <g id="BG-DECORD" opacity="0.22582654" transform="translate(100.629342, 0.000000)">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy-2" opacity="0.0995810688">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy" opacity="0.22582654" transform="translate(70.028606, 23.539027)">
+                                <path d="M0,4.71637551 L9.41561095,0 L18.8312219,4.71637551 L18.8312219,64.1352796 L9.41561095,68.8516551 L0,64.1352796 L0,4.71637551 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(534.335922, 0.000000)">
+                            <g id="BG-DECORD" opacity="0.22582654" transform="translate(100.629342, 0.000000)">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy-2" opacity="0.0995810688">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy" opacity="0.22582654" transform="translate(70.028606, 23.539027)">
+                                <path d="M0,4.71637551 L9.41561095,0 L18.8312219,4.71637551 L18.8312219,64.1352796 L9.41561095,68.8516551 L0,64.1352796 L0,4.71637551 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(667.919902, 0.000000)">
+                            <g id="BG-DECORD" opacity="0.22582654" transform="translate(100.629342, 0.000000)">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy-2" opacity="0.0995810688">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy" opacity="0.22582654" transform="translate(70.028606, 23.539027)">
+                                <path d="M0,4.71637551 L9.41561095,0 L18.8312219,4.71637551 L18.8312219,64.1352796 L9.41561095,68.8516551 L0,64.1352796 L0,4.71637551 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(801.503882, 0.000000)">
+                            <g id="BG-DECORD" opacity="0.22582654" transform="translate(100.629342, 0.000000)">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy-2" opacity="0.0995810688">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy" opacity="0.22582654" transform="translate(70.028606, 23.539027)">
+                                <path d="M0,4.71637551 L9.41561095,0 L18.8312219,4.71637551 L18.8312219,64.1352796 L9.41561095,68.8516551 L0,64.1352796 L0,4.71637551 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(935.087863, 0.000000)">
+                            <g id="BG-DECORD" opacity="0.22582654" transform="translate(100.629342, 0.000000)">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy-2" opacity="0.0995810688">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy" opacity="0.22582654" transform="translate(70.028606, 23.539027)">
+                                <path d="M0,4.71637551 L9.41561095,0 L18.8312219,4.71637551 L18.8312219,64.1352796 L9.41561095,68.8516551 L0,64.1352796 L0,4.71637551 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(1068.671843, 0.000000)">
+                            <g id="BG-DECORD" opacity="0.22582654" transform="translate(100.629342, 0.000000)">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy-2" opacity="0.0995810688">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy" opacity="0.22582654" transform="translate(70.028606, 23.539027)">
+                                <path d="M0,4.71637551 L9.41561095,0 L18.8312219,4.71637551 L18.8312219,64.1352796 L9.41561095,68.8516551 L0,64.1352796 L0,4.71637551 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(1202.255823, 0.000000)">
+                            <g id="BG-DECORD" opacity="0.22582654" transform="translate(100.629342, 0.000000)">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy-2" opacity="0.0995810688">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy" opacity="0.22582654" transform="translate(70.028606, 23.539027)">
+                                <path d="M0,4.71637551 L9.41561095,0 L18.8312219,4.71637551 L18.8312219,64.1352796 L9.41561095,68.8516551 L0,64.1352796 L0,4.71637551 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(1335.839804, 0.000000)">
+                            <g id="BG-DECORD-Copy-2" opacity="0.0995810688">
+                                <path d="M0,6.6512988 L13.2407029,0 L26.4814058,6.6512988 L26.4814058,90.4471891 L13.2407029,97.0984879 L0,90.4471891 L0,6.6512988 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                            <g id="BG-DECORD-Copy" opacity="0.22582654" transform="translate(70.028606, 23.539027)">
+                                <path d="M0,4.71637551 L9.41561095,0 L18.8312219,4.71637551 L18.8312219,64.1352796 L9.41561095,68.8516551 L0,64.1352796 L0,4.71637551 Z" id="Combined-Shape" fill="url(#linearGradient-3)"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="SOLID/BEHAVIOR" transform="translate(32.366163, 0.460564)">
+                <g id="SOLID-BASE" transform="translate(127.110748, 65.320801)">
+                    <g id="Rectangle_Left_Isometric">
+                        <use fill="#576091" xlink:href="#path-4"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-4"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-4"></use>
+                    </g>
+                    <g id="Rectangle_Right_Isometric">
+                        <use fill="#576091" xlink:href="#path-5"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-5"></use>
+                        <use fill-opacity="0.257670969" fill="#09172E" xlink:href="#path-5"></use>
+                    </g>
+                    <g id="Rectangle_Top_Isometric">
+                        <use fill="#576091" xlink:href="#path-6"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-6"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-6"></use>
+                    </g>
+                </g>
+                <g id="SOLID-BASE-Copy" transform="translate(254.221496, 0.000000)">
+                    <g id="Rectangle_Left_Isometric">
+                        <use fill="#576091" xlink:href="#path-7"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-7"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-7"></use>
+                    </g>
+                    <g id="Rectangle_Right_Isometric">
+                        <use fill="#576091" xlink:href="#path-8"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-8"></use>
+                        <use fill-opacity="0.257670969" fill="#09172E" xlink:href="#path-8"></use>
+                    </g>
+                    <g id="Rectangle_Top_Isometric">
+                        <use fill="#576091" xlink:href="#path-9"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-9"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-9"></use>
+                    </g>
+                </g>
+                <g id="SOLID-BASE-Copy-2" transform="translate(430.764201, 120.049040)">
+                    <g id="Rectangle_Left_Isometric">
+                        <use fill="#576091" xlink:href="#path-10"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-10"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-10"></use>
+                    </g>
+                    <g id="Rectangle_Right_Isometric">
+                        <use fill="#576091" xlink:href="#path-11"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-11"></use>
+                        <use fill-opacity="0.257670969" fill="#09172E" xlink:href="#path-11"></use>
+                    </g>
+                    <g id="Rectangle_Top_Isometric">
+                        <use fill="#576091" xlink:href="#path-12"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-12"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-12"></use>
+                    </g>
+                </g>
+                <g id="SOLID-BASE-Copy-3" transform="translate(557.874949, 56.493666)">
+                    <g id="Rectangle_Left_Isometric">
+                        <use fill="#576091" xlink:href="#path-13"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-13"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-13"></use>
+                    </g>
+                    <g id="Rectangle_Right_Isometric">
+                        <use fill="#576091" xlink:href="#path-14"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-14"></use>
+                        <use fill-opacity="0.257670969" fill="#09172E" xlink:href="#path-14"></use>
+                    </g>
+                    <g id="Rectangle_Top_Isometric">
+                        <use fill="#576091" xlink:href="#path-15"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-15"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-15"></use>
+                    </g>
+                </g>
+                <g id="SOLID-BASE-Copy-4" transform="translate(684.985697, 12.357989)">
+                    <g id="Rectangle_Left_Isometric">
+                        <use fill="#576091" xlink:href="#path-16"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-16"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-16"></use>
+                    </g>
+                    <g id="Rectangle_Right_Isometric">
+                        <use fill="#576091" xlink:href="#path-17"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-17"></use>
+                        <use fill-opacity="0.257670969" fill="#09172E" xlink:href="#path-17"></use>
+                    </g>
+                    <g id="Rectangle_Top_Isometric">
+                        <use fill="#576091" xlink:href="#path-18"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-18"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-18"></use>
+                    </g>
+                </g>
+                <g id="SOLID-BASE-Copy-5" transform="translate(837.400899, 21.773600)">
+                    <g id="Rectangle_Left_Isometric">
+                        <use fill="#576091" xlink:href="#path-19"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-19"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-19"></use>
+                    </g>
+                    <g id="Rectangle_Right_Isometric">
+                        <use fill="#576091" xlink:href="#path-20"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-20"></use>
+                        <use fill-opacity="0.257670969" fill="#09172E" xlink:href="#path-20"></use>
+                    </g>
+                    <g id="Rectangle_Top_Isometric">
+                        <use fill="#576091" xlink:href="#path-21"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-21"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-21"></use>
+                    </g>
+                </g>
+                <g id="SOLID-BASE-Copy-6" transform="translate(991.581528, 0.000000)">
+                    <g id="Rectangle_Left_Isometric">
+                        <use fill="#576091" xlink:href="#path-22"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-22"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-22"></use>
+                    </g>
+                    <g id="Rectangle_Right_Isometric">
+                        <use fill="#576091" xlink:href="#path-23"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-23"></use>
+                        <use fill-opacity="0.257670969" fill="#09172E" xlink:href="#path-23"></use>
+                    </g>
+                    <g id="Rectangle_Top_Isometric">
+                        <use fill="#576091" xlink:href="#path-24"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-24"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-24"></use>
+                    </g>
+                </g>
+                <g id="SOLID-BASE-Copy-7" transform="translate(1168.124234, 56.493666)">
+                    <g id="Rectangle_Left_Isometric">
+                        <use fill="#576091" xlink:href="#path-25"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-25"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-25"></use>
+                    </g>
+                    <g id="Rectangle_Right_Isometric">
+                        <use fill="#576091" xlink:href="#path-26"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-26"></use>
+                        <use fill-opacity="0.257670969" fill="#09172E" xlink:href="#path-26"></use>
+                    </g>
+                    <g id="Rectangle_Top_Isometric">
+                        <use fill="#576091" xlink:href="#path-27"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-27"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-27"></use>
+                    </g>
+                </g>
+                <g id="SOLID-BASE-Copy-8" transform="translate(1305.239068, 56.493666)">
+                    <g id="Rectangle_Left_Isometric">
+                        <use fill="#576091" xlink:href="#path-28"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-28"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-28"></use>
+                    </g>
+                    <g id="Rectangle_Right_Isometric">
+                        <use fill="#576091" xlink:href="#path-29"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-29"></use>
+                        <use fill-opacity="0.257670969" fill="#09172E" xlink:href="#path-29"></use>
+                    </g>
+                    <g id="Rectangle_Top_Isometric">
+                        <use fill="#576091" xlink:href="#path-30"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-30"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-30"></use>
+                    </g>
+                </g>
+                <g id="SOLID/BASE" transform="translate(0.000000, 65.320801)">
+                    <g id="Rectangle_Left_Isometric">
+                        <use fill="#576091" xlink:href="#path-31"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-31"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-31"></use>
+                    </g>
+                    <g id="Rectangle_Right_Isometric">
+                        <use fill="#576091" xlink:href="#path-32"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-32"></use>
+                        <use fill-opacity="0.257670969" fill="#09172E" xlink:href="#path-32"></use>
+                    </g>
+                    <g id="Rectangle_Top_Isometric">
+                        <use fill="#576091" xlink:href="#path-33"></use>
+                        <use fill-opacity="0.70482337" fill="#333E77" xlink:href="#path-33"></use>
+                        <use fill-opacity="0.460000008" fill="#09172E" xlink:href="#path-33"></use>
+                    </g>
+                </g>
+            </g>
+            <rect id="TINT" fill="url(#linearGradient-34)" x="0" y="65.7813649" width="1440" height="207.731917"></rect>
+        </g>
+    </g>
+</svg>
