@@ -1,5 +1,7 @@
+import { use } from 'express/lib/router';
 import React from 'react';
 import { Link } from 'react-router-dom'
+import axios from 'axios';
 import './sign.css'
 
 const Checkbox = props => (
@@ -12,10 +14,31 @@ export default class Register extends React.Component {
   }  
   
   mySubmitHandler = () =>{
-    if(this.state.agree==true)
-      alert("Ok")
-    else
-      alert("Please check your agreement")      
+    if(this.state.mail==="" || this.state.password === "" || this.state.username==="")
+      alert("Please input all data");
+    else{
+      if(this.state.agree==true){
+        var data = { mail: this.state.mail, password:this.state.password, username: this.state.username, level:0 };
+        axios.post('http://localhost:8080/register', data)
+            .then(
+              response => {  
+                console.log(response.data)              
+                if (response.data=="Registration Success")
+                {
+                  this.props.history.push('/login');
+                }else{
+                  alert(response.data);
+                }
+              }          
+            )
+            .catch(
+              error => {this.setState({ errorMessage: error.message });
+              console.error('There was an error!', error);
+            }
+        );
+      }else
+        alert("Please check your agreement")      
+    }
   }
   handleChange(event) {
     this.setState({[event.target.name]: event.target.value});   

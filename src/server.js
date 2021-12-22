@@ -27,20 +27,21 @@ export const renderApp = (req, res) => {
       <App />
     </StaticRouter>
   );
-  const html = `<!doctype html>
-  <html lang="">
-  <head>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta charset="utf-8" />
-      <title>Welcome to Razzle</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      ${cssLinksFromAssets(assets, 'client')}
-  </head>
-  <body>
-      <div id="root">${markup}</div>
-      ${jsScriptTagsFromAssets(assets, 'client', 'defer', 'crossorigin')}
-  </body>
-</html>`
+  const html = `
+                <!doctype html>
+                  <html lang="">
+                  <head>
+                      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                      <meta charset="utf-8" />
+                      <title>Welcome</title>
+                      <meta name="viewport" content="width=device-width, initial-scale=1">
+                      ${cssLinksFromAssets(assets, 'client')}
+                  </head>
+                  <body>
+                      <div id="root">${markup}</div>
+                      ${jsScriptTagsFromAssets(assets, 'client', 'defer', 'crossorigin')}
+                  </body>
+                </html>`
   return {context, html};
 }
 
@@ -50,11 +51,12 @@ server
   .use(express.static(process.env.RAZZLE_PUBLIC_DIR))
   .get('/*', (req, res) => {
     const {context, html} = renderApp(req, res);
-    if (context.url) {
+    if (context.url) {      
       res.redirect(context.url);
     } else {
       res.status(200).send(html);
     }
-  });
+  })
+  ;
 
 export default server;

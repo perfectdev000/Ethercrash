@@ -5,6 +5,7 @@ import { messages as initialMesages } from '../Home/ChatMessages'
 import { Link } from 'react-router-dom'
 import Chat from '../Home/Chat'
 import './Home.css'
+import { render } from 'express/lib/response'
 
 let axisStep = (step, add = 0) => {
   let result = []
@@ -197,229 +198,231 @@ let Home = () => {
   let LoginHandler = () => {
     $loginActive(true)
   }
-
-  return (
-    <div className="App">
-      <div className="Screen">
-        <header className="Header">
-          <div className="Header_logo">
-            BE
-          </div>
-          <div className="Header_score">
-            Ethos: 0.00
-            Bit: 0.00
-          </div>
-          <div className="Header_auth AuthLinks">
-            {loginActive 
-              ? <Link className="AuthLinks_link" to="/game">Tinenmi</Link>
-              : (
-                <>
-                  <Link className="AuthLinks_link" to="/login">Login</Link>
-                  <Link className="AuthLinks_link" to="/register">Register</Link>
-                </>
-              )}
-          </div>
-        </header>
-        <div className="Row">
-          <div className="Column">
-            <div className="GameWrapper">
-              <div className="Game">
-                <div className="Game_text">SOCIAL ETHEREUM GAMBLING</div>
-                <div className="Game_graphic">
-                  <svg fill="white" width="300px" height="180px" viewBox="0 0 300 180">
-                    <style>
-                      {'.small { font: 7px sans-serif; }'}
-                    </style>
-                    <linearGradient id="linear-gradient">
-                      <stop offset="0%" stopColor="gold" />
-                      <stop offset="100%" stopColor="teal" />
-                    </linearGradient>
-
-                    {yAxis.map((Y, YInd) => (
-                      YInd == 0
-                        ? ''
-                        : <text key={YInd} x="0" y={170 - 170 * (Y - 1) / yAxis.length * 12 / height} className="small">{Y.toPrecision(2)}</text>
-                    ))}
-
-                    <text x="9" y="172" className="small">0</text>
-
-                    {xAxis.map((X, XInd) => (
-                       <text key={XInd} x={30 + 270 * (X - 1) / xAxis.length * 2 / width * 75} y="175" className="small">{X}</text>
-                    ))}
-
-                    <line x1={15} y1={165} x2={300} y2={165} stroke="white" />
-                    <line x1={15} y1={165} x2={15} y2={0} stroke="white" />
-                    {lines.map((c, cInd) =>
-                        <line key={cInd} x1={koeffX(c.x1)} y1={koeffY(c.y1)} x2={koeffX(c.x2)} y2={koeffY(c.y2)} stroke="white" />
-                    )}
-                  </svg>
-                </div>
-                <div className="Game_value">
-                  {value.toPrecision(3)}x
-                </div>
-                <div className="Game_history GameHistory">
-                  {history.map((I, IInd) => (
-                     <div key={IInd} className={cn('GameHistory_item', { '--loose': I < 2, '--win': I >= 2 })}>{I}x</div>
-                  ))}
-                </div>
-              </div>
-              {!loginActive && <div className="Auth">
-                <div className="Auth_button">
-                  <button className="Button" onClick={LoginHandler}>Login to play</button>
-                </div>
-                <div className="Auth_link">
-                  <a className="Link">or register</a>
-                </div>
-              </div>}
-              {loginActive && <div className="Bet">
-                <div className="Bet_line BetInput">
-                  <div className="BetInput_field">
-                    <div className="BetInput_label">Bet</div>
-                    <input className="BetInput_input" inputmode="decimal" value={betAmount} onChange={$amountChange} />
-                  </div>
-                  <div className="BetInput_buttons">
-                    <button className={cn('BetInput_switch', { '--active': betType == 0 })} onClick={$betTypeBound(0)}>Eth</button>
-                    <button className={cn('BetInput_switch', { '--active': betType == 1 })} onClick={$betTypeBound(1)}>Bit</button>
-                  </div>
-                </div>
-                <div className="Bet_line BetInput">
-                  <div className="BetInput_field">
-                    <div className="BetInput_label">Auto Cash Out</div>
-                    <input className="BetInput_input" inputmode="decimal" value="4.0" />
-                  </div>
-                </div>
-                <div className="Bet_line BetRun">
-                  <div className="BetRun_statistics BetRunStatistics">
-                    <div className="BetRunStatistics_name">Target Profit:</div>
-                    <div className="BetRunStatistics_value">0.0002 BTC</div>
-                    <div className="BetRunStatistics_name">Win Chance:</div>
-                    <div className="BetRunStatistics_value">49.5%</div>
-                  </div>
-                  <div className="BetRun_buttonSpace">
-                    <button className="BetRun_button">
-                      BET
-                    </button>
-                  </div>
-                </div>
-              </div>}
+  
+    return (
+      <div className="App">
+        <div className="Screen">
+          <header className="Header">
+            <div className="Header_logo">
+              BE
             </div>
-            <div className="TabPane">
-              <div className="TabLine">
-                <div className={cn('TabLine_item', { '--active': tabActive == 0 })} onClick={$tabActiveBound(0)}>Players</div>
-                <div className={cn('TabLine_item', { '--active': tabActive == 1 })} onClick={$tabActiveBound(1)}>Chat</div>
+            <div className="Header_score">
+              Ethos: 0.00
+              Bit: 0.00
+            </div>
+            <div className="Header_auth AuthLinks">
+              {loginActive 
+                ? <Link className="AuthLinks_link" to="/game">Tinenmi</Link>
+                : (
+                  <>
+                    <Link className="AuthLinks_link" to="/login">Login</Link>
+                    <Link className="AuthLinks_link" to="/register">Register</Link>
+                  </>
+                )}
+            </div>
+          </header>
+          <div className="Row">
+            <div className="Column">
+              <div className="GameWrapper">
+                <div className="Game">
+                  <div className="Game_text">SOCIAL ETHEREUM GAMBLING</div>
+                  <div className="Game_graphic">
+                    <svg fill="white" width="300px" height="180px" viewBox="0 0 300 180">
+                      <style>
+                        {'.small { font: 7px sans-serif; }'}
+                      </style>
+                      <linearGradient id="linear-gradient">
+                        <stop offset="0%" stopColor="gold" />
+                        <stop offset="100%" stopColor="teal" />
+                      </linearGradient>
+
+                      {yAxis.map((Y, YInd) => (
+                        YInd == 0
+                          ? ''
+                          : <text key={YInd} x="0" y={170 - 170 * (Y - 1) / yAxis.length * 12 / height} className="small">{Y.toPrecision(2)}</text>
+                      ))}
+
+                      <text x="9" y="172" className="small">0</text>
+
+                      {xAxis.map((X, XInd) => (
+                        <text key={XInd} x={30 + 270 * (X - 1) / xAxis.length * 2 / width * 75} y="175" className="small">{X}</text>
+                      ))}
+
+                      <line x1={15} y1={165} x2={300} y2={165} stroke="white" />
+                      <line x1={15} y1={165} x2={15} y2={0} stroke="white" />
+                      {lines.map((c, cInd) =>
+                          <line key={cInd} x1={koeffX(c.x1)} y1={koeffY(c.y1)} x2={koeffX(c.x2)} y2={koeffY(c.y2)} stroke="white" />
+                      )}
+                    </svg>
+                  </div>
+                  <div className="Game_value">
+                    {value.toPrecision(3)}x
+                  </div>
+                  <div className="Game_history GameHistory">
+                    {history.map((I, IInd) => (
+                      <div key={IInd} className={cn('GameHistory_item', { '--loose': I < 2, '--win': I >= 2 })}>{I}x</div>
+                    ))}
+                  </div>
+                </div>
+                {!loginActive && <div className="Auth">
+                  <div className="Auth_button">
+                    {/* <button className="Button" onClick={LoginHandler}>Login to play</button> */}
+                    <Link className="Button" to="/login" style={{textDecoration:'none'}}>Login to play</Link>
+                  </div>
+                  <div className="Auth_link">
+                    <a className="Link">or register</a>
+                  </div>
+                </div>}
+                {loginActive && <div className="Bet">
+                  <div className="Bet_line BetInput">
+                    <div className="BetInput_field">
+                      <div className="BetInput_label">Bet</div>
+                      <input className="BetInput_input" inputmode="decimal" value={betAmount} onChange={$amountChange} />
+                    </div>
+                    <div className="BetInput_buttons">
+                      <button className={cn('BetInput_switch', { '--active': betType == 0 })} onClick={$betTypeBound(0)}>Eth</button>
+                      <button className={cn('BetInput_switch', { '--active': betType == 1 })} onClick={$betTypeBound(1)}>Bit</button>
+                    </div>
+                  </div>
+                  <div className="Bet_line BetInput">
+                    <div className="BetInput_field">
+                      <div className="BetInput_label">Auto Cash Out</div>
+                      <input className="BetInput_input" inputmode="decimal" value="4.0" />
+                    </div>
+                  </div>
+                  <div className="Bet_line BetRun">
+                    <div className="BetRun_statistics BetRunStatistics">
+                      <div className="BetRunStatistics_name">Target Profit:</div>
+                      <div className="BetRunStatistics_value">0.0002 BTC</div>
+                      <div className="BetRunStatistics_name">Win Chance:</div>
+                      <div className="BetRunStatistics_value">49.5%</div>
+                    </div>
+                    <div className="BetRun_buttonSpace">
+                      <button className="BetRun_button">
+                        BET
+                      </button>
+                    </div>
+                  </div>
+                </div>}
               </div>
-              {tabActive == 0 && <div className={cn('TabContent', { '--active': tabActive == 0 })}>
-                <Players items={players} />
-              </div>}
-              {tabActive == 1 && <div className={cn('TabContent', { '--active': tabActive == 1 })}>
+              <div className="TabPane">
+                <div className="TabLine">
+                  <div className={cn('TabLine_item', { '--active': tabActive == 0 })} onClick={$tabActiveBound(0)}>Players</div>
+                  <div className={cn('TabLine_item', { '--active': tabActive == 1 })} onClick={$tabActiveBound(1)}>Chat</div>
+                </div>
+                {tabActive == 0 && <div className={cn('TabContent', { '--active': tabActive == 0 })}>
+                  <Players items={players} />
+                </div>}
+                {tabActive == 1 && <div className={cn('TabContent', { '--active': tabActive == 1 })}>
+                  <Chat messages={messages} $messages={$messages} />
+                </div>}
+              </div>
+              <div className="DesktopContent">
+                <div className="ChatHeader">Chat</div>
                 <Chat messages={messages} $messages={$messages} />
-              </div>}
+              </div>
             </div>
             <div className="DesktopContent">
-              <div className="ChatHeader">Chat</div>
-              <Chat messages={messages} $messages={$messages} />
-            </div>
-          </div>
-          <div className="DesktopContent">
-            <Players items={players} />
-            <div className="PlayerStatistics">
-              <div className="PlayerStatistics_item">
-                Players: 17
-              </div>
-              <div className="PlayerStatistics_item">
-                Betting: 1,561 Ethos
+              <Players items={players} />
+              <div className="PlayerStatistics">
+                <div className="PlayerStatistics_item">
+                  Players: 17
+                </div>
+                <div className="PlayerStatistics_item">
+                  Betting: 1,561 Ethos
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="Statistics">
-        <div className="Statistics_item StatisticsItem --home">
-          <div className="StatisticsItem_name">Median</div>
-          <div className="StatisticsItem_value">1.97x</div>
-        </div>
-        <div className="Statistics_item StatisticsItem --bankroll">
-          <div className="StatisticsItem_name">Bankroll</div>
-          <div className="StatisticsItem_value">Ξ 336</div>
-        </div>
-        <div className="Statistics_item StatisticsItem --maxProfit">
-          <div className="StatisticsItem_name">Max profit</div>
-          <div className="StatisticsItem_value">Ξ 3.36</div>
-        </div>
-        <div className="Statistics_item StatisticsItem --maxBet">
-          <div className="StatisticsItem_name">Max Bet</div>
-          <div className="StatisticsItem_value">Ξ 1</div>
-        </div>
-      </div>
-      <div className="ArticleGrid">
-        <div className="Article">
-          <div className="Article_header">
-            What is EtherCrash?
+        <div className="Statistics">
+          <div className="Statistics_item StatisticsItem --home">
+            <div className="StatisticsItem_name">Median</div>
+            <div className="StatisticsItem_value">1.97x</div>
           </div>
-          <div className="Article_text">
-            Ethercrash.io is the most established and largest gambling game for Ethereum. Based on Bustabit and provably fair with a low house edge. You can deposit with either Bitcoin or Ethereum, give it a try today!
+          <div className="Statistics_item StatisticsItem --bankroll">
+            <div className="StatisticsItem_name">Bankroll</div>
+            <div className="StatisticsItem_value">Ξ 336</div>
+          </div>
+          <div className="Statistics_item StatisticsItem --maxProfit">
+            <div className="StatisticsItem_name">Max profit</div>
+            <div className="StatisticsItem_value">Ξ 3.36</div>
+          </div>
+          <div className="Statistics_item StatisticsItem --maxBet">
+            <div className="StatisticsItem_name">Max Bet</div>
+            <div className="StatisticsItem_value">Ξ 1</div>
           </div>
         </div>
-        <div className="Article --negative">
-          <div className="Article_header --negative">
-            Provably Fair
+        <div className="ArticleGrid">
+          <div className="Article">
+            <div className="Article_header">
+              What is EtherCrash?
+            </div>
+            <div className="Article_text">
+              Ethercrash.io is the most established and largest gambling game for Ethereum. Based on Bustabit and provably fair with a low house edge. You can deposit with either Bitcoin or Ethereum, give it a try today!
+            </div>
           </div>
-          <div className="Article_text --negative">
-            EtherCrash's outcome can be proven as fair. There are third party scripts you can use to verify the game hashes and calculate the results.
+          <div className="Article --negative">
+            <div className="Article_header --negative">
+              Provably Fair
+            </div>
+            <div className="Article_text --negative">
+              EtherCrash's outcome can be proven as fair. There are third party scripts you can use to verify the game hashes and calculate the results.
+            </div>
+          </div>
+          <div className="Article">
+            <div className="Article_header">
+              How it Works:
+            </div>
+            <div className="Article_text">
+              Every game starts from 0x and counts up, you can watch your wager amount being multiplied in your bet area and choose to cash out at anytime but beware if you wait too long it can crash and you will lose your entire bet.
+            </div>
+          </div>
+          <div className="Article --negative">
+            <div className="Article_header --negative">
+              Be the Bankroll.
+            </div>
+            <div className="Article_text --negative">
+              Increase your Ethereum holdings by investing into the bankroll of Ethercrash. By being part of the growing bankroll you can monitor your investment and see its growth or decline whenever you choose. By investing you ensure we can also have a higher max bet limit. The bankroll is used for paying out players who want to withdraw their winnings. Invest into Ethercrash today and see your money grow!
+            </div>
           </div>
         </div>
-        <div className="Article">
-          <div className="Article_header">
-            How it Works:
+        <div className="Leaderboard">
+          <div className="Leaderboard_header">
+            Leaderboard
           </div>
-          <div className="Article_text">
-            Every game starts from 0x and counts up, you can watch your wager amount being multiplied in your bet area and choose to cash out at anytime but beware if you wait too long it can crash and you will lose your entire bet.
-          </div>
-        </div>
-        <div className="Article --negative">
-          <div className="Article_header --negative">
-            Be the Bankroll.
-          </div>
-          <div className="Article_text --negative">
-            Increase your Ethereum holdings by investing into the bankroll of Ethercrash. By being part of the growing bankroll you can monitor your investment and see its growth or decline whenever you choose. By investing you ensure we can also have a higher max bet limit. The bankroll is used for paying out players who want to withdraw their winnings. Invest into Ethercrash today and see your money grow!
-          </div>
-        </div>
-      </div>
-      <div className="Leaderboard">
-        <div className="Leaderboard_header">
-          Leaderboard
-        </div>
-        <div className="Leaderboard_table">
-          <div className="Leaderboard_cell">#</div>
-          <div className="Leaderboard_cell">Name</div>
-          <div className="Leaderboard_cell">Profit</div>
+          <div className="Leaderboard_table">
+            <div className="Leaderboard_cell">#</div>
+            <div className="Leaderboard_cell">Name</div>
+            <div className="Leaderboard_cell">Profit</div>
 
-          <div className="Leaderboard_cell">1</div>
-          <div className="Leaderboard_cell">Blowme</div>
-          <div className="Leaderboard_cell">1,303.95&nbsp;ETH</div>
+            <div className="Leaderboard_cell">1</div>
+            <div className="Leaderboard_cell">Blowme</div>
+            <div className="Leaderboard_cell">1,303.95&nbsp;ETH</div>
 
-          <div className="Leaderboard_cell">2</div>
-          <div className="Leaderboard_cell">Jdmdbdb</div>
-          <div className="Leaderboard_cell">500.00&nbsp;ETH</div>
+            <div className="Leaderboard_cell">2</div>
+            <div className="Leaderboard_cell">Jdmdbdb</div>
+            <div className="Leaderboard_cell">500.00&nbsp;ETH</div>
 
-          <div className="Leaderboard_cell">3</div>
-          <div className="Leaderboard_cell">ColdNeffex2</div>
-          <div className="Leaderboard_cell">418.20&nbsp;ETH</div>
+            <div className="Leaderboard_cell">3</div>
+            <div className="Leaderboard_cell">ColdNeffex2</div>
+            <div className="Leaderboard_cell">418.20&nbsp;ETH</div>
 
-          <div className="Leaderboard_cell">4</div>
-          <div className="Leaderboard_cell">Triceratops</div>
-          <div className="Leaderboard_cell">361.12&nbsp;ETH</div>
+            <div className="Leaderboard_cell">4</div>
+            <div className="Leaderboard_cell">Triceratops</div>
+            <div className="Leaderboard_cell">361.12&nbsp;ETH</div>
 
-          <div className="Leaderboard_cell">5</div>
-          <div className="Leaderboard_cell">Sanjeetsir</div>
-          <div className="Leaderboard_cell">332.55&nbsp;ETH</div>
+            <div className="Leaderboard_cell">5</div>
+            <div className="Leaderboard_cell">Sanjeetsir</div>
+            <div className="Leaderboard_cell">332.55&nbsp;ETH</div>
+          </div>
+        </div>
+        <div className="Copyright">
+          ethercrash.io - game concept originally by bustabit.
         </div>
       </div>
-      <div className="Copyright">
-        ethercrash.io - game concept originally by bustabit.
-      </div>
-    </div>
-  );
+    )
+  
 }
 
 
